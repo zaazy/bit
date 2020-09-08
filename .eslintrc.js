@@ -16,6 +16,7 @@ module.exports = {
     'no-sequences': 0,
     'no-undef': 0,
     'no-case-declarations': 0,
-    'no-unreachable': 0
+    'no-unreachable': 0,
+    'import/no-absolute-path': 0
   }
 }

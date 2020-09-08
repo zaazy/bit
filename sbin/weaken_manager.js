@@ -3,7 +3,7 @@
 import {
   array_make_schedule_script,
   void_schedule_script_runner
-} from '../lib/lib_ram_script.js'
+} from '/bit/lib/lib_ram_script.js'
 
 // main
 export const main = async function (ns) {

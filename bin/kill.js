@@ -8,9 +8,9 @@
 import {
   string_sanitise,
   object_parse_arguments
-} from '../lib/lib_no_ns.js'
-import { array_get_servers } from '../lib/lib_servers.js'
-import { void_kill_script_named_server_named } from '../lib/lib_kill.js'
+} from '/bit/lib/lib_no_ns.js'
+import { array_get_servers } from '/bit/lib/lib_servers.js'
+import { void_kill_script_named_server_named } from '/bit/lib/lib_kill.js'
 
 const object_get_constants = function () {
   return {

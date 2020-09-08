@@ -10,13 +10,13 @@
 import {
   string_sanitise,
   object_parse_arguments
-} from '../lib/lib_no_ns.js'
+} from '/bit/lib/lib_no_ns.js'
 import {
   float_get_time_hack,
   float_get_time_grow,
   float_get_time_weaken
-} from '../lib/lib_time.js'
-import { float_get_server_score } from '../lib/lib_score.js'
+} from '/bit/lib/lib_time.js'
+import { float_get_server_score } from '/bit/lib/lib_score.js'
 
 const object_get_constants = function () {
   return {
