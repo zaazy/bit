@@ -2,7 +2,7 @@
 import {
   float_get_network_ram_utilisation,
   float_get_server_ram_total
-} from 'lib_ram_server.js'
+} from '../lib/lib_ram_server.js'
 
 export const main = async function (ns) {
   const float_period_check = 1e3 * ns.args[0]
@@ -175,7 +175,7 @@ const boolean_conditions_server_purchase_2 = function (ns) {
     )
     // you dont own a server with max RAM yet, buy a server with RAM greater than the RAM of your biggest bought server
     if (
-      float_ram_server_bought_biggest !=
+      float_ram_server_bought_biggest !==
         object_constants.PurchasedServerMaxRam &&
       float_ram_server_bought_biggest <
         integer_get_server_ram_biggest_afforded(ns)
@@ -193,7 +193,7 @@ const boolean_conditions_server_purchase_3 = function (ns) {
     // you currently own less than the maximum amount of purchased servers allowed
     integer_servers_bought_amount < object_constants.PurchasedServerLimit &&
     // you already bought a server with max ram, buy another server the max possible ram
-    float_get_server_ram_total(ns, string_get_server_bought_biggest(ns)) ==
+    float_get_server_ram_total(ns, string_get_server_bought_biggest(ns)) ===
       float_ram_server_bought_maximum &&
     integer_get_server_ram_biggest_afforded(ns) >=
       float_ram_server_bought_maximum
@@ -204,7 +204,7 @@ const boolean_conditions_server_delete_purchase = function (ns) {
   const object_constants = object_get_constants()
   return (
     // you currently own the maximum amount of purchased servers allowed
-    ns.getPurchasedServers().length == object_constants.PurchasedServerLimit &&
+    ns.getPurchasedServers().length === object_constants.PurchasedServerLimit &&
     // your servers do not all have the maximum RAM possible for purchased servers
     !boolean_servers_bought_all_max(
       ns,
