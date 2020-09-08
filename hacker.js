@@ -11,30 +11,30 @@
 
 // functions
 
-import { array_get_servers } from 'lib_servers.js'
+import { array_get_servers } from '/bit/lib_servers.js'
 import {
   array_get_servers_useable
-} from '/bit/lib/lib_ram_server.js'
+} from '/bit//bit/lib/lib_ram_server.js'
 import {
   object_make_server_used,
   void_copy_script_to
-} from '/bit/lib/lib_ram_script.js'
+} from '/bit//bit/lib/lib_ram_script.js'
 import {
   object_get_server_ram_free_biggest,
   array_get_servers_used_updated,
   array_make_servers,
   object_get_clone,
   float_clamp
-} from '/bit/lib/lib_no_ns.js'
+} from '/bit//bit/lib/lib_no_ns.js'
 import {
   array_get_servers_hackable,
   float_get_server_score
-} from '/bit/lib/lib_score.js'
+} from '/bit//bit/lib/lib_score.js'
 import {
   float_get_time_hack,
   float_get_time_grow,
   float_get_time_weaken
-} from '/bit/lib/lib_time.js'
+} from '/bit//bit/lib/lib_time.js'
 
 export const main = async function (ns) {
   const array_arguments = ns.args

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-expressions */
 // lib_score.js - 2.25GB
-import { array_get_servers_rooted } from '../lib_root.js'
+import { array_get_servers_rooted } from '/bit/../lib_root.js'
 
 const float_get_mean = function (array_numbers) {
   let float_total = 0

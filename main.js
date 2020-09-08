@@ -13,17 +13,17 @@
 import {
   string_sanitise,
   object_parse_arguments
-} from 'lib_no_ns.js'
+} from '/bit/lib_no_ns.js'
 import {
   float_get_server_ram_free
-} from 'lib_ram_server.js'
+} from '/bit/lib_ram_server.js'
 import {
   array_make_schedule_script,
   void_schedule_script_runner
-} from 'lib_ram_script.js'
-import { array_get_servers } from 'lib_servers.js'
-import { array_get_files_with_string } from 'lib_ls.js'
-import { void_kill_script_named_server_named } from 'lib_kill.js'
+} from '/bit/lib_ram_script.js'
+import { array_get_servers } from '/bit/lib_servers.js'
+import { array_get_files_with_string } from '/bit/lib_ls.js'
+import { void_kill_script_named_server_named } from '/bit/lib_kill.js'
 
 const object_get_constants = function () {
   return {

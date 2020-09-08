@@ -10,9 +10,9 @@
 import {
   string_sanitise,
   object_parse_arguments
-} from 'lib_no_ns.js'
-import { array_get_files_with_string } from 'lib_ls.js'
-import { array_get_servers } from 'lib_servers.js'
+} from '/bit/lib_no_ns.js'
+import { array_get_files_with_string } from '/bit/lib_ls.js'
+import { array_get_servers } from '/bit/lib_servers.js'
 
 // main
 export const main = async function (ns) {
