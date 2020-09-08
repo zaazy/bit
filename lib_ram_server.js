@@ -2,7 +2,7 @@
 import {
   array_get_servers_rooted
 }
-  from '/bit/./lib_root.js'
+  from '/bit/lib_root.js'
 
 // returns the total ram of a server
 export const float_get_server_ram_total = function (ns, string_server) {

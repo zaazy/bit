@@ -2,7 +2,7 @@
 import {
   array_get_servers
 }
-  from '/bit/./lib_servers.js'
+  from '/bit/lib_servers.js'
 
 // returns an array of all rooted servers
 export const array_get_servers_rooted = function (ns) {
