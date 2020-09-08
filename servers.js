@@ -2,7 +2,7 @@
 import {
   float_get_network_ram_utilisation,
   float_get_server_ram_total
-} from '../lib/lib_ram_server.js'
+} from 'lib_ram_server.js'
 
 export const main = async function (ns) {
   const float_period_check = 1e3 * ns.args[0]

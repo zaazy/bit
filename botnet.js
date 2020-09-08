@@ -1,5 +1,5 @@
 // botnet.js - 2.2GB - opens ports and nukes any unrooted servers if the player's hacking level is high enough to do so and the appropriate number of object_exploits are present
-import { array_get_servers_unrooted } from '../lib/lib_root.js'
+import { array_get_servers_unrooted } from 'lib_root.js'
 
 // main
 export const main = async function (ns) {
