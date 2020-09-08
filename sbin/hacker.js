@@ -11,7 +11,7 @@
 
 // functions
 
-import { array_get_servers } from '/bit/lib/lib_servers.js'
+import { array_get_servers } from '../lib/lib_servers.js'
 import {
   array_get_servers_useable
 } from '/bit/lib/lib_ram_server.js'
